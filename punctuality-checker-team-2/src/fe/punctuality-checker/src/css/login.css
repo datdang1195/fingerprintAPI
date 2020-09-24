@@ -1,0 +1,124 @@
+/*------------------------------------------------------------------
+[ Custom button google ]*/
+
+div.abcRioButton{
+    width: 560px !important;
+    height: 70px !important;
+    position: relative;
+    background: #111111;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .abcRioButtonContentWrapper:hover{
+    background: #9e9e9e94;
+  }
+
+  .abcRioButtonContentWrapper span{
+    align-items: center;
+    font-size: 18px;
+    line-height: 68px;
+  }
+
+  .abcRioButtonBlue .abcRioButtonIcon {
+    background: transparent !important;
+  }
+
+  span.abcRioButtonContents{
+    font-family: OpenSans-Bold;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 240px;
+  }
+
+  .abcRioButtonIconImage18 svg{
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .abcRioButtonContentWrapper {
+    width: 100%;
+    background: #272343;
+    z-index: 999;
+}
+  div.abcRioButtonContentWrapper:hover {
+    background: #111111;
+}
+
+.limiter {
+  width: 100%;
+  height: 100%;
+  background: #e3f6f5;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-login100,
+.container-main100
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #e3f6f5;
+}
+.main100-form-signout
+{
+  margin-top: 35px;
+  cursor: pointer;  
+  color:#111111;
+  font-size: 20px;
+}
+
+.wrap-login100 {
+  width: 560px;
+}
+.wrap-main100 {
+  width: 1024px;
+}
+
+img.login100-form-title{
+  width: 300px;  
+  margin: 0px auto;
+}
+i.fa.fa-sign-out {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a#signOut:hover {
+  text-decoration: none;
+  box-shadow: 7px 6px 1px -2px rgba(0, 0, 0, 0.49), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);  
+}
+a#signOut:hover > i {
+  color: #272343;
+}
+a#signOut {
+  color: #272343;
+  text-decoration: underline;
+  padding: 10px;
+  font-weight: 700;
+
+}
+
+.container-login100-text{
+  height: 100px;
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.container-main100-not-access{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "auto-functuality-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "rsync -av -e ssh --exclude='node_modules' --exclude='src/html' /Users/duong.ngoc/Documents/projects/punctuality-checker-team-2/src/fe/punctuality-checker/ ojt2020team2@10.161.206.147:/home/ojt2020team2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate": "^1.0.0",
+    "animate.css": "^4.1.0",
+    "animsition": "^4.0.2",
+    "bootstrap": "3.4.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "bootstrap-datetimepicker": "^0.0.7",
+    "bootstrap3": "^3.3.5",
+    "countdowntime": "^0.0.3",
+    "daterangepicker": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "3.5.1",
+    "moment": "^2.27.0",
+    "popper": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "select2": "^4.0.13",
+    "twbs-pagination": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.2.2",
+    "http-server": "^0.12.3",
+    "popper.js": "^1.16.1"
+  }
+}

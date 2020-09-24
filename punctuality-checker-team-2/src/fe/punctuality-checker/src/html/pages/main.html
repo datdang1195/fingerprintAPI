@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('../components/header.html')
+    <script src="./src/js/auth.js"></script>
+<body>
+    <div class="limiter">
+		<div class="container-main100">
+                    <div class="container">
+                        <form class="main100-form">
+                            <div><img class="main100-form-title" src="./src/images/ekino_logo.png" alt=""></div>
+                            <div><p class="txt3">Auto Punctuality Check</p></div>
+                            <div><i class="fa fa-bars" id="showMenu"></i></div>
+                            <div class="main100-form-openmenu">
+                                <i class="fa fa-arrow-left" id="closeMenu"></i>
+                                <!-- sign out for mobile -->
+                                <div class="main100-form-signout-mobile js-main100-form-signout"></div>
+                            </div>
+                            <!-- sign out for desktop -->
+                            <div class="main100-form-signout-desktop js-main100-form-signout"></div>
+                        </form>
+                        @@include('../components/nav-menu.html')
+                        <div class="tab-content">
+                            <!-- Daily page -->
+                            @@include('../components/daily.html')
+                            <!-- Range page -->
+                            @@include('../components/range.html')
+                            <!-- Employees page -->
+                            @@include('../components/employees.html')
+                        </div>
+                    </div>
+                </div>
+                @@include('../components/footer.html')                        
+            </div>            
+    @@include('../components/script.html')
+</body>
+</html>

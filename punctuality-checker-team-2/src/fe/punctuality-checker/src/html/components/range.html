@@ -1,0 +1,49 @@
+<div id="range" class="range tab-pane fade">
+    <div class="range_horz_list m-b-20">
+        <div id="reportrange"  class="pull-left m-r-10">
+            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+            <span></span> <b class="caret"></b>
+        </div>
+        <div><button id="js-range-button" type="button" class="btn btn-primary">GO</button></div>
+    </div>
+    <div class="range_work p-b-10"></div>
+    <!-- <div class="range_work p-b-10"><div class="js-range_work">TOTAL WORKING DAYS: 7</div></div> -->
+
+    <!-- search range mobile -->
+    <input class="search-range range-control range-control-mobile m-b-5" id="search-range-mobile" type="text" placeholder="Search name here" aria-label="Search">
+    <table class="table table-striped table-primary">
+      <thead class="js-thead-range">
+        <tr>
+            <th scope="col" class="range_no">
+                <div class="table_no_title">No.</div>
+            </th>
+          <th scope="col" class="search_range">
+              <div class="search_range_title p-t-14 p-l-10">FULL NAME</div>
+              <!-- search range desktop -->
+              <input class="search-range range-control" id="search-range" type="text" placeholder="Search name here" aria-label="Search">
+              <span id="searchclear-range" class="glyphicon glyphicon-remove-circle"></span>
+          </th>
+          <th scope="col" class="table_present text-center">
+              PRESENT <br/>(days)
+          </th>
+          <th scope="col" class="table_dayoff text-center">
+              DAY OFF <br/>(days)
+          </th>
+          <th scope="col" class="table_late text-center">
+              LATE <br/>(times)
+          </th>
+          <th scope="col" class="table_absent text-center">
+              ABSENT <br/>(times)
+          </th>
+        </tr>
+      </thead>
+      <tbody class="js-tbody-range">
+      </tbody>
+    </table>
+    <!-- pagination -->
+      <div class="news-pagination">
+          <ul class="pagination__wrapper" id="pagination__wrapper__range">
+          </ul>    
+          <div class ="news-pagination__export__range"><button id="js-range-export">EXPORT EXCEL &nbsp; <i class ="fa fa-file-excel-o"></i> </button></div>
+      </div>
+</div>

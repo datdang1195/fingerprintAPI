@@ -1,0 +1,105 @@
+<div id="daily" class="tab-pane fade in active">
+    <div class="daily_horz_list m-b-20">
+        <div id="datepicker" class="input-group date m-r-10" data-date-format="mm-dd-yyyy">
+            <input id="datepicker-selected-date" class="form-control" type="text" readonly />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        </div>
+        <div><button id="js-daily-button" type="button" class="btn btn-primary">GO</button></div>
+    </div>
+    <table class="table table-striped table-primary">
+        <thead class="js-thead-daily">
+        <tr>
+            <th scope="col" class="table_no">
+                <div class="table_no_title">No.</div>
+            </th>
+            <th scope="col" class="table_search">
+                <div class="table_search_title p-t-14 p-l-10">FULL NAME</div>
+                <!-- search for desktop -->
+                <input class="daily-search form-control" id="daily-search" type="text" placeholder="Search name here" aria-label="Search">
+                <span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
+            </th>
+            <!-- search for mobile -->
+            <input class="form-control daily-search daily-search-mobile p-b-5" id="daily-search-mobile" type="text" placeholder="Search name here" aria-label="Search">            
+            <div class="table_select_item daily-select-mobile daily-select-mobile-flex m-t-5 p-b-5">
+                <select class="table_select_option mdb-select md-form" id="table_select_option_mobile">
+                    <option value="ALL" selected>All Status</option>
+                    <option value="A0">A0</option>
+                    <option value="A">A</option>
+                    <option value="AA">AA</option>
+                    <option value="AB">AB</option>
+                    <option value="P0">P0</option>
+                    <option value="P">P</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="A0P0">A0P0</option>
+                    <option value="A0P">A0P</option>
+                    <option value="A0PA">A0PA</option>
+                    <option value="A0PB">A0PB</option>
+                    <option value="AP0">AP0</option>
+                    <option value="AP">AP</option>
+                    <option value="APA">APA</option>
+                    <option value="APB">APB</option>
+                    <option value="AAP0">AAP0</option>
+                    <option value="AAP">AAP</option>
+                    <option value="AAPA">AAPA</option>
+                    <option value="AAPB">AAPB</option>
+                    <option value="ABP0">ABP0</option>
+                    <option value="ABP">ABP</option>
+                    <option value="ABPA">ABPA</option>
+                    <option value="ABPB">ABPB</option>
+                </select>
+                <div class="select-icon select-icon-mobile">
+                    <svg focusable="false" viewBox="0 0 104 128" width="25" height="35" class="icon">
+                    <path d="m2e1 95a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm0-3e1a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm0-3e1a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm14 55h68v1e1h-68zm0-3e1h68v1e1h-68zm0-3e1h68v1e1h-68z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <th scope="col" class="table_select">
+                <div class="table_select_item p-b-3">
+                    <div class="table_select_title p-t-14">Status : </div>
+                        <select class="table_select_option mdb-select md-form" id="table_select_option">
+                            <option value="ALL" selected>All Status</option>
+                            <option value="A0">A0</option>
+                            <option value="A">A</option>
+                            <option value="AA">AA</option>
+                            <option value="AB">AB</option>
+                            <option value="P0">P0</option>
+                            <option value="P">P</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="A0P0">A0P0</option>
+                            <option value="A0P">A0P</option>
+                            <option value="A0PA">A0PA</option>
+                            <option value="A0PB">A0PB</option>
+                            <option value="AP0">AP0</option>
+                            <option value="AP">AP</option>
+                            <option value="APA">APA</option>
+                            <option value="APB">APB</option>
+                            <option value="AAP0">AAP0</option>
+                            <option value="AAP">AAP</option>
+                            <option value="AAPA">AAPA</option>
+                            <option value="AAPB">AAPB</option>
+                            <option value="ABP0">ABP0</option>
+                            <option value="ABP">ABP</option>
+                            <option value="ABPA">ABPA</option>
+                            <option value="ABPB">ABPB</option>
+                        </select>
+                        <div class="select-icon">
+                            <svg focusable="false" viewBox="0 0 104 128" width="25" height="35" class="icon">
+                            <path d="m2e1 95a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm0-3e1a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm0-3e1a9 9 0 0 1 -9 9 9 9 0 0 1 -9 -9 9 9 0 0 1 9 -9 9 9 0 0 1 9 9zm14 55h68v1e1h-68zm0-3e1h68v1e1h-68zm0-3e1h68v1e1h-68z"></path>
+                            </svg>
+                        </div>
+                </div>
+            </th>            
+            </tr>
+        </thead>
+        <tbody class="js-tbody-daily"></tbody>
+    </table>
+  <!-- pagination -->
+    <div class="news-pagination">
+        <ul class="pagination__wrapper" id="pagination__wrapper__daily">
+        </ul>
+        <div class ="news-pagination__export__daily"><button id="js-daily-export">EXPORT EXCEL &nbsp; <i class ="fa fa-file-excel-o"></i> </button></div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div id="employees" class="tab-pane fade">
+    <input class="search-employees employees-control employees-control-mobile m-b-5" id="search-employees-mobile" type="text" placeholder="Search name here" aria-label="Search">
+    <table class="table table-striped table-primary">
+      <thead class="js-thead-employees">
+        <tr>
+            <th scope="col" class="employees_no">
+                <div class="table_no_title">No.</div>
+            </th>
+          <th scope="col" class="search_employees">
+              <div class="search_employees_title p-t-14 p-l-10">FULL NAME</div>
+              <input class="search-employees employees-control" id="search-employees" type="text" placeholder="Search name here" aria-label="Search">
+              <span id="searchclear-employees" class="glyphicon glyphicon-remove-circle"></span>
+          </th>
+          <th scope="col" class="table_active text-center">
+              ACTIVE
+          </th>
+          <th scope="col" class="table_day text-center">
+              LAST WORKING DAY
+          </th>
+        </tr>
+      </thead>
+      <tbody class="js-tbody-employees">
+      </tbody>
+    </table>
+    <!-- pagination -->
+      <div class="news-pagination">
+          <div>
+            <ul class="pagination__wrapper" id="pagination__wrapper__employees"></ul>
+          </div>
+          <div class="news-pagination__wrapper">
+            <div class ="news-pagination__save__employees"><button id="js-employees-save" class="employees-save-disabled" disabled>SAVE &nbsp;<i class ="fa fa-save"></i> </button></div>
+            <div class ="news-pagination__export__employees"><button id="js-employees-export">EXPORT EXCEL &nbsp;<i class ="fa fa-file-excel-o"></i> </button></div>
+          </div>
+          
+      </div>
+</div>
